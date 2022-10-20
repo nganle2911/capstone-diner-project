@@ -1,0 +1,40 @@
+// Helpers
+@import "../scss/Helpers/variables";
+@import "../scss/Helpers/mixin";
+
+// Vendor
+
+// Base
+@import "../scss/Base/reset";
+
+// Layout
+@import "../scss/Layouts/header";
+@import "../scss/Layouts/carousel";
+@import "../scss/Layouts/about";
+@import "../scss/Layouts/resto";
+@import "../scss/Layouts/team";
+@import "../scss/Layouts/category";
+@import "../scss/Layouts/menu";
+@import "../scss/Layouts/stats-video";
+@import '../scss/Layouts/contact';
+@import "../scss/Layouts/map";
+@import "../scss/Layouts/post";
+@import "../scss/Layouts/testimonials";
+@import "../scss/Layouts/footer";
+
+// Components
+@import "../scss/Components/button";
+
+// Pages
+@import "../scss/Pages/style_about.scss";
+@import "../scss/Pages/serviceStyle.scss";
+@import "../scss/Pages/404";
+@import "../scss/Pages/blogStyle.scss";
+@import "../scss/Pages/contact";
+@import "../scss/Pages/landingPage";
+
+// Theme
+
+
+    
+

@@ -1,0 +1,215 @@
+//HELPERS
+@import "../Helpers/variables";
+@import "../Helpers/mixin";
+//BASE
+@import "../Base/reset";
+
+//HEADER
+.about-header {
+    background-image: linear-gradient(to right, #ff6600, hsla(30deg, 100%, 1%, 0.2)),url(../../img/banner2.jpeg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 400px;
+    .container{
+        padding-top: $padding-20;
+       .col-4{
+        .logo{
+            h1{
+                color: $color-white-0;
+            }
+        }
+       }
+       .col-8{
+        .row{
+            .col-9{
+                .menu{
+                    ul{
+                        li{
+                            list-style: none;
+                            display: inline;
+                            a{
+                                text-decoration: none;
+                                margin-left: 5px;
+                                color: $color-white-0;
+                                font-weight: $fw-0;
+                                
+                                &:hover{
+                                    color:$color-orange-0 ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col-1{
+                .switch{
+                    color: $color-white-0   ;
+                    span{
+                        opacity: 0;
+                    }
+                    i{
+                        
+                    }
+                }
+            }
+            .col-2{
+                .search-bar{
+                    position: relative;
+                    .search{
+                        .search__input{
+                            border-radius: 6px;
+                            border: none;
+                            padding: 10px 20px;
+                        }
+                        .search__icon{
+                            position: absolute;
+                            top: 14px;
+                            left: 180px;
+                        }
+                    }
+                }
+            }
+        }
+       }
+    }
+    .about-extend{
+        text-align: center;
+        margin-top: 100px;
+        .path{
+            li{
+                display: inline;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $color-orange-0;
+                }
+            }
+            li{
+                color: $color-white-0;
+                span{
+
+                }
+            }
+        }
+    }
+}
+//STORY
+.about-story{
+    .container{
+        .story-heading{
+            
+            h3{
+                @include text($color-orange-0,$fs-heading-c1,$fw-heading-c1);
+                font-family: 'Pacifico', cursive;
+                letter-spacing: 1px;
+            }
+            h1{
+                @include text($color-black-0,$fs-heading-c2,$fw-heading-c2); 
+            }
+        }
+        .story-content{
+            margin-top: $margin-40;
+            .row{
+                .story-item{
+                    img{
+                        border-radius: $border-radius-0;
+                    }
+                    .heading{
+                        h1{
+                            @include text($color-black-0,$fs-heading-c2,$fw-heading-c2); 
+                        }
+                    }
+                    .content{
+                        p{
+                            @include text($color-black-1,$fs-text,$fw-text); 
+                        }
+                        .contact-btn{
+                            button{
+                                padding: 12px 45px;
+                                border: 2px solid $color-orange-0 ;
+                                border-radius: $border-radius-0;
+                                @include text($color-white-0,$fs-0,$fw-0);
+                                background-color: $color-orange-0;
+                                &:hover{
+                                    background-color: #ff6600;
+                                    border: 2px solid #ff6600;
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .activity{
+            margin-top: $margin-40;
+            .row{
+                .activity-heading{
+                    h1{
+                        @include text($color-black-0,$fs-38,$fw-heading-c2);
+                        line-height: $line-height-48;
+}
+                    }
+                }
+                .activity-item{
+                    h3{
+                        @include text($color-orange-0,$fs-20,$fw-heading-c2);
+                        
+                        &:hover{
+                            color: $color-yellow-0;
+                        }
+                        
+                    }
+                    p{
+                        margin-top: $margin-4;
+                        @include text($color-black-0,$fs-text,$fw-text);
+                    }
+                }
+            }
+        }
+    }
+//SKILL
+.about-skill{
+    background-color: $bg-grey-1;
+    .container{
+        .row{
+            .skill-heading{
+                h3{
+                    @include text($color-orange-0,$fs-heading-c1,$fw-heading-c1);
+                    font-family: 'Pacifico', cursive;
+                    letter-spacing: 1px;
+                }
+                h1{
+                    @include text($color-black-0,$fs-heading-c2,$fw-heading-c2); 
+                }
+                p{
+                    @include text($color-grey-0,$fs-heading-c1,$fw-text);
+                    line-height: 28px;
+                }
+            }
+            .bar{
+                .progress-info{
+                    .progress-title{
+                        @include text($color-black-0,$fs-heading-c1,$fw-0);
+                        margin-bottom: 10px;
+                    }
+                    .progress{
+                        .progress-bar {
+                            background-image: none;
+                            height: 1rem;
+                            background-color: $color-orange-0;
+                        }
+                    }
+                }
+            }
+            .thumbnail{
+                border-radius: $border-radius-0;
+            }
+        }
+    }
+}
+//TEAM
+@import "../Layouts/team";
+//FOOTER
+@import "../Layouts/footer";
